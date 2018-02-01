@@ -73,20 +73,20 @@ func main() {
       EnvVar: "DOWNLOAD_ENABLE",
     },
     cli.StringFlag {
-      Name:   "download-output, do",
+      Name:   "./data/download-output, do",
       Value:  "download.csv",
       Usage:  "The output file for download measures",
       EnvVar: "DOWNLOAD_OUTPUT",
     },
     cli.StringFlag {
       Name:   "upload-output, uo",
-      Value:  "upload.csv",
+      Value:  "./data/upload.csv",
       Usage:  "The output file for upload measures",
       EnvVar: "UPLOAD_OUTPUT",
     },
     cli.StringFlag {
       Name:   "ping-output, po",
-      Value:  "ping.csv",
+      Value:  "./data/ping.csv",
       Usage:  "output file for ping measures",
       EnvVar: "PING_OUTPUT",
     },

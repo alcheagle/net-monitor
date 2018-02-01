@@ -6,5 +6,6 @@ RUN CGO_ENABLED=0 GOOS=linux go build
 
 FROM scratch
 # FROM alpine
+RUN mkdir -p /data
 COPY --from=builder /go/src/github.com/alcheagle/net-monitor/net-monitor .
 ENTRYPOINT ["/net-monitor"]
